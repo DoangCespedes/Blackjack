@@ -42,4 +42,14 @@ const pedirCarta = () => {
 
 }
 
-pedirCarta()
+// pedirCarta()
+
+const valorCarta = (carta) => {
+    const valor = carta.substring(0, carta.length - 1); //El metodo substring nos ayuda a obtener la parte del string que queremos.
+    return (isNaN( valor )) ? // SOLO NECESITAMOS LA PARTE NUMERICA PAARA SABER SU VALOR RECORDEMOS QUE EL JUEGO SE TRATA DE LLEGAR A 21.
+        ( valor  === 'A') ? 11 : 10
+    : valor * 1; //De esta manera convertimos los string en numeros
+
+}
+const valor = valorCarta('AC');
+console.log( {valor} );
