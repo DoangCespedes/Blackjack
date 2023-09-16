@@ -1,0 +1,26 @@
+
+Los callBack son funciones que se mandan como argumentos dentro de otras funciones.
+
++ Como nota importante cabe destacar que en el proyecto se usa ademas de metodos para trabajar con arreglos, tambien la manipulacion del DOM.
+
+METODOS UTILIZADOS PARA MANIPULAR EL DOM:
+
+*  const titulo = document.querySelector('header')
+
+    de esta manera hacemos una vatiable para reutilizar el selector del elemento html que queremos manipular.
+
+*const divBotones = document.querySelector('#divBotones') // de esta manera accedimos al elemento por su id.
+    
+*divBotones
+
+AQUI NOS MUESTRA EL ELEMENTO AL CUAL ACCEDIMOS   <div id=​"divBotones" class=​"col text-center">​<button class="btn btn-warning">​Nuevo Juego​</button>​<button class=​"btn btn-primary">​Pedir Carta​</button>​<button class=​"btn btn-primary">​Detener​</button>​</div>​
+
+*const botonNuevo = document.createElement('button') AQUI CREAMOS UN BTN NUEVO
+
+*divBotones.append( botonNuevo ) AQUI INTRODUCIMOS NUESTRO NUEVO BTN EN EL CONTENEDOR SELECCIONADO
+
+*botonNuevo.innerText = 'Destruir el mundo' // LE DAMOS TEXTO A NUESTRO NUEVO BTN 
+
+*botonNuevo.classList.add('btn') LE ANIADIMOS UNA CLASE
+
+botonNuevo.classList.add('btn-success') LE ANIADIMOS OTRA CLASE
