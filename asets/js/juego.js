@@ -17,6 +17,7 @@ let puntosJugador = 0,
 // -------------- REFERENCIAS DEL HTML -----------
 
 const btnPedir = document.querySelector('#btnPedir')
+const btnNuevo = document.querySelector('#btnNuevo')
 const btnDetener = document.querySelector('#btnDetener')
 const puntajeJugador = document.querySelector('#puntajeJugador')
 const puntajeComputadora = document.querySelector('#puntajeComputadora')
@@ -153,4 +154,18 @@ btnPedir.addEventListener('click', () => {
     }
 });
 
+// NUEVO JUEGO   ------------------
 
+btnNuevo.addEventListener('click', () => {
+    console.clear();
+    console.warn('juego nuevo')
+    btnPedir.disabled = false;
+    btnDetener.disabled = false;
+    puntajeJugador.innerText = 0 ;
+    puntajeComputadora.innerText = 0 ;
+    puntosJugador = 0;
+    puntosComputadora  = 0;
+
+    divCartasJugador.innerHTML = '<p></p>'
+    divCartasComputadora.innerHTML = '<p></p>'
+})
