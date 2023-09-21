@@ -24,3 +24,17 @@ AQUI NOS MUESTRA EL ELEMENTO AL CUAL ACCEDIMOS   <div id=​"divBotones" class=�
 *botonNuevo.classList.add('btn') LE ANIADIMOS UNA CLASE
 
 botonNuevo.classList.add('btn-success') LE ANIADIMOS OTRA CLASE
+
+
+PATRON MODULO 
+
+El patrón módulo consiste en un módulo donde se encapsulará toda la lógica de nuestra aplicación o proyecto.
+Dentro de este módulo estarán declaradas todas las variables o funciones privadas y sólo serán visibles dentro del mismo.
+
+(() => {
+    'use strict'
+
+
+})()
+
+NOTA: En otras palabras es una funcion anonima que se autoinvoca, la cual encapsulamos nuestra componente js.
